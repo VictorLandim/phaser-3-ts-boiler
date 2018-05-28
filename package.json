@@ -1,0 +1,22 @@
+{
+    "name": "phaser3-ts-boilerplate",
+    "version": "1.0.0",
+    "description": "Phaser 3 typescript boilerplate",
+    "scripts": {
+        "dev": "webpack && webpack-dev-server --mode development",
+        "build": "webpack && webpack-dev-server --mode production",
+        "update-types": "curl https://raw.githubusercontent.com/photonstorm/phaser3-docs/master/typescript/phaser.d.ts --create-dirs --location --output ./src/lib/phaser.d.ts",
+        "postinstall": "npm run update-types"
+    },
+    "devDependencies": {
+        "expose-loader": "^0.7.5",
+        "ts-loader": "^4.3.0",
+        "typescript": "^2.8.3",
+        "webpack": "^4.9.1",
+        "webpack-cli": "^2.1.4",
+        "webpack-dev-server": "^3.1.4"
+    },
+    "dependencies": {
+        "phaser": "^3.9.0"
+    }
+}

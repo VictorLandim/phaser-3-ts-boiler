@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "allowJs": true,
+        "preserveConstEnums": true
+    },
+    "include": ["src/lib/phaser.d.ts"]
+}
