@@ -1,9 +1,11 @@
+/// <reference path="./lib/phaser.d.ts" />
+
 import * as Phaser from 'phaser';
-import { MainScene } from './scenes/MainScene';
+import MainScene from './scenes/MainScene';
 
 const config: GameConfig = {
-    width: 1200,
-    height: 720,
+    width: 900,
+    height: 500,
     type: Phaser.AUTO,
     parent: 'game',
     scene: MainScene,

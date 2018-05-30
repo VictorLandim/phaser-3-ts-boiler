@@ -6,12 +6,21 @@ class MainScene extends Phaser.Scene {
     }
 
     preload(): void {
-        this.load.image('logo', './assets/phaser.png');
+        this.load.image('logo', 'assets/phaser.png');
     }
 
     create(): void {
         this.phaserSprite = this.add.sprite(100, 100, 'logo');
+
+        this.tweens.add({
+            targets: this.phaserSprite,
+            y: 600,
+            duration: 1500,
+            ease: 'Power2',
+            yoyo: true,
+            loop: -1
+        });
     }
 }
 
-export { MainScene };
+export default MainScene;

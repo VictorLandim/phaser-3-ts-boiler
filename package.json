@@ -9,10 +9,11 @@
         "postinstall": "npm run update-types"
     },
     "devDependencies": {
+        "copy-webpack-plugin": "^4.5.1",
         "expose-loader": "^0.7.5",
         "ts-loader": "^4.3.0",
         "typescript": "^2.8.3",
-        "webpack": "^4.9.1",
+        "webpack": "^4.10.0",
         "webpack-cli": "^2.1.4",
         "webpack-dev-server": "^3.1.4"
     },
